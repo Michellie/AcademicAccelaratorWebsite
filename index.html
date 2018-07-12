@@ -26,10 +26,12 @@
     <div class="page-header">
         <h1>Academic Accelerator</h1>
     </div>
-    <div>
+    
+    <!-- Nav Bar -->
+    <div class = "topNav">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Maths</a>
+                <a class="nav-link active" href="index.html">Maths</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">English</a>
@@ -42,9 +44,84 @@
             </li>
         </ul>
     </div>
-    <div id = "mainSection">
-        <div id = "modulesBar" class = "col-lg-3 col-md-4 col-sm-6">
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Left Nav -->
+            <div class="leftContent col-lg-2 col-sm-3 col-4 my-6">
+                    <nav class="verticalNav id="myScrollspy">
+                            <ul id="verticalNav" class="nav nav-pills flex-column">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#section1">Algebra</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#section2">Geometry</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Measurements</a>
+                                    <div class="dropdown-menu">
+                                      <a class="nav-link dropdown-item" href="#section41">Link 1</a>
+                                      <a class="nav-link dropdown-item" href="#section42">Link 2</a>
+                                    </div>
+                                  </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Trigonometry</a>
+                                <div class="dropdown-menu">
+                                  <a class="nav-link dropdown-item" href="#section41">Link 1</a>
+                                  <a class="nav-link dropdown-item" href="#section42">Link 2</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </nav>
+
             </div>
+
+            <!-- Middle Section -->
+            <div id="mainContent" class="col-lg-8">
+
+                <!-- Title -->
+                <h1 class="mt-4">Maths</h1>
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente
+                    nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
+                    ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius
+                    illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim,
+                    iure!</p>
+
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                    </footer>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
+                    totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
+                    tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
+                    Qui, necessitatibus, est!</p>
+
+                <hr>
+                
+            </div>
+
+            <!-- Right Section -->
+            <div id="rightBar" class="col-lg-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
+                    ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+            </div>
+        </div>
+
     </div>
 
 </body>

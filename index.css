@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(181, 228, 247);
+    background-color:#b5e4f7;
 }
 
 .page-header{
@@ -10,24 +10,39 @@ body{
     text-align: center;     
 }
 
-.nav{
+.topNav{
     background-color:#0481f5;
     padding: 10px;
+    height: 40px;
 }
-.nav-link{
+
+a{ 
     color:white;
     font-size: 1em;
     padding: 0 60px 0 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;         
 }
 
-#mainSection{
-    background-color: rgb(245, 249, 253);
-    height: 650px;
+a:hover{
+    color:#b5e4f7;
 }
 
-#modulesBar{
-    background-color: rgb(145, 192, 240);
-    height: 100%;   
+a.active{
+    text-decoration: underline;
+}
 
+.verticalNav{   
+    background-color: #0481f5;
+    margin: 5px;
+    margin-top: 20px;   
+}
+
+
+.col-lg-2{
+    background-color: aliceblue;
+}
+
+.col-lg-8{
+    background-color: white;
 }
