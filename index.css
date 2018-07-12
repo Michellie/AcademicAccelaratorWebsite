@@ -12,14 +12,14 @@ body{
 
 .topNav{
     background-color:#0481f5;
-    padding: 10px;
-    height: 40px;
+    padding-top: 5px;
+    height: 50px;
 }
 
 a{ 
     color:white;
-    font-size: 1em;
-    padding: 0 60px 0 60px;
+    font-size: 1.2em;
+    padding: 0 60px 10px 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;         
 }
@@ -41,8 +41,26 @@ a.active{
 
 .col-lg-2{
     background-color: aliceblue;
+    margin-bottom: -46%;
+    overflow: hidden;
 }
 
 .col-lg-8{
     background-color: white;
+    margin-bottom: -46%;
+    overflow: hidden;
 }
+
+#algebra, #perimeter,#mass{
+    background-color: #f19d9d;
+}
+
+.scrollStyle {
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: white;
+    border: black;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
