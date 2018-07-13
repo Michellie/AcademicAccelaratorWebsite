@@ -17,9 +17,9 @@ body{
 }
 
 a{ 
+    float: left;
     color:white;
     font-size: 1.2em;
-    padding: 0 60px 10px 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;         
 }
@@ -35,20 +35,23 @@ a.active{
 .verticalNav{   
     background-color: #0481f5;
     margin: 5px;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
+.verticalNav a{   
+    padding-left: 20px; 
+    padding-right: 0px; 
+}
 
 .col-lg-2{
     background-color: aliceblue;
-    margin-bottom: -46%;
-    overflow: hidden;
+    float: left;
 }
 
 .col-lg-8{
     background-color: white;
-    margin-bottom: -46%;
     overflow: hidden;
+    float: left;
 }
 
 #algebra, #perimeter,#mass{
@@ -64,3 +67,15 @@ a.active{
     margin-bottom: 40px;
 }
 
+span{
+    padding-right: 10px;
+}
+
+.dropdown-menu{
+    background-color: #0481f5
+}
+
+@media (min-width: 992px) {
+    body {
+    position:relative;
+  }
