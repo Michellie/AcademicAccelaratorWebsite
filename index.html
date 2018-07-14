@@ -101,40 +101,31 @@
                     <!-- Algebra -->
                     <div id="algebra">
                         <h2>Algebra</h2>
-                        <p class="lead">Find the values of variable x.
-                        </p>
-                        <div id="algebra1q">
+                        <div class="algebraquestions">
+                            <p class="lead">Find the values of variable x.
+                            </p>
+                            <p id="algebra1q">
+                            </p>
+                            <p id="algebra2q">
+                            </p>
+                            <p id="algebra3q">
+                            </p>
+                            <p id="algebra4q">
+                            </p>
+                            <p id="algebra5q">
+                            </p>
+                            <p id="algebra6q">
+                            </p>
+                            <p id="algebra7q">
+                            </p>
+                            <p id="algebra8q">
+                            </p>
+                            <p id="algebra9q">
+                            </p>
+                            <p id="algebra10q">
+                            </p>
                         </div>
-                        <button type="button" onclick="algebraQues();">Submit</button>
-
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos
-                            iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                            voluptatibus.
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                            unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                            Enim, iure!
-                        </p>
-
-                        <blockquote class="blockquote">
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in
-                                <cite title="Source Title">Source Title</cite>
-                            </footer>
-                        </blockquote>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas
-                            placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem
-                            obcaecati?
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                            aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam
-                            recusandae? Qui, necessitatibus, est!</p>
-
-                        <hr>
+                        <button type="button" onclick="algebraQues();">Start</button>
                     </div>
                     <!-- Fractions -->
                     <div id="fractions">
@@ -330,11 +321,14 @@
 
 <script>
 
-    function algebraQues(){
-        var a = Math.floor(Math.random()* 100) +1;
-        var b = Math.floor(Math.random()* 100) +1;
-        var c = a + b;
-            document.getElementById("algebra1q").innerHTML = a.toString() + "+" + b.toString() + " = " + c.toString();
+    function algebraQues() {
+        for (i = 0; i < 10; i++) {
+            var a = Math.floor(Math.random() * 100) + 1;
+            var b = Math.floor(Math.random() * 100) + 1;
+            var c = a + b;
+            var idstr = "algebra" + parseInt(i + 1) + "q";
+            document.getElementById(idstr).innerHTML = a.toString() + "+" + b.toString() + " = " + c.toString();
+        }
     }
 </script>
 
