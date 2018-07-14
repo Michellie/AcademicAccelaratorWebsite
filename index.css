@@ -62,10 +62,13 @@ a.active{
     overflow-y: scroll;
     background-color: white;
     border: black;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 40px;
 }
 
+#algebra{
+    padding: 10px;
+}
 span{
     padding-right: 10px;
 }

@@ -125,7 +125,7 @@
                             <p id="algebra10q">
                             </p>
                         </div>
-                        <button type="button" onclick="algebraQues();">Start</button>
+                        <button id="start" type="button" onclick="algebraQues();">Start</button>
                     </div>
                     <!-- Fractions -->
                     <div id="fractions">
@@ -329,6 +329,7 @@
             var idstr = "algebra" + parseInt(i + 1) + "q";
             document.getElementById(idstr).innerHTML = a.toString() + "+" + b.toString() + " = " + c.toString();
         }
+        document.getElementById("start").innerHTML = "submit";
     }
 </script>
 
