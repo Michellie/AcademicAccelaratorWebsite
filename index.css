@@ -85,11 +85,11 @@ span{
 
 label{
     margin-right: 5px;
-    text-emphasis:
 }
 
 .col-xs-6{
     background-color: aliceblue;
+    padding: 4px;
 }
 
 .form-control{
@@ -100,3 +100,13 @@ label{
 .algebraquestions {
     padding-top: 7px;
 }
+
+.exemplarImg{
+    width: 70%;
+    height:50%;
+}
+
+.classquesAndans{
+    width:100%;
+}
+

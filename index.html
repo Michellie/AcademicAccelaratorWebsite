@@ -102,7 +102,12 @@
                     <div id="algebra">
                         <table class="table">
                                     <h2>Algebra</h2>
-                            <tr>
+                            <tr> 
+                                <td>                                
+                                    <img class="exemplarImg"src="img/algebra.png" alt = "Example on how to solve algebraic equation">
+                                </td>                       
+                            </tr>
+                            <tr class="classquesAndans"id="qesAndans" style="display:None">
                                 <td class="col-xs-6">
                                         <div class="algebraquestions">
                                                 <p id="algebra1q">
@@ -205,7 +210,7 @@
                                 <td>                                   
                                     <button id="start" type="button" onclick="algebraQues();">Start</button>
                                 </td>
-                            </tr>
+                            </tr>   
                         </table>
                     </div>
                     <!-- Fractions -->
@@ -410,6 +415,7 @@
             var idstr = "algebra" + parseInt(i + 1) + "q";
             document.getElementById(idstr).innerHTML = parseInt(i + 1) + ")  " + a.toString() + "+" + b.toString() + " = " + c.toString();
         }
+        document.getElementById("qesAndans").style.display = "block";
         document.getElementById("start").innerHTML = "submit";
     }
 </script>
