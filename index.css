@@ -58,7 +58,7 @@ a.active{
 }
 
 .scrollStyle {
-    max-height: 500px;
+    max-height: 520px;
     overflow-y: scroll;
     background-color: white;
     border: black;
@@ -81,4 +81,22 @@ span{
     body {
     position:relative;
   }
+}
+
+label{
+    margin-right: 5px;
+    text-emphasis:
+}
+
+.col-xs-6{
+    background-color: aliceblue;
+}
+
+.form-control{
+    margin-bottom:8px;
+    height: 32px;;
+}
+
+.algebraquestions {
+    padding-top: 7px;
 }
