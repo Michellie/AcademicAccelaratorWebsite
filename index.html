@@ -102,13 +102,9 @@
                     <div id="algebra">
                         <table class="table">
                                     <h2>Algebra</h2>
-                            <tr> 
-                                <td>                                
-                                    <img class="exemplarImg"src="img/algebra.png" alt = "Example on how to solve algebraic equation">
-                                </td>                       
-                            </tr>
-                            <tr class="classquesAndans"id="qesAndans" style="display:None">
-                                <td class="col-xs-6">
+                        
+                            <tr class="col-xs-6 classquesAndans"id="qesAndans" style="visibility: hidden">
+                                <td>
                                         <div class="algebraquestions">
                                                 <p id="algebra1q">
                                                 </p>                                                
@@ -145,56 +141,48 @@
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
                                             <label for="x">x = </label>
                                             <input type="x" class="form-control" id="email">
                                         </div>
-                                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
                                     </form>
                                     <form class="form-inline" action="/action_page.php">
                                         <div class="form-group">
@@ -207,6 +195,7 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>                                   
                                     <button id="start" type="button" onclick="algebraQues();">Start</button>
                                 </td>
@@ -415,7 +404,7 @@
             var idstr = "algebra" + parseInt(i + 1) + "q";
             document.getElementById(idstr).innerHTML = parseInt(i + 1) + ")  " + a.toString() + "+" + b.toString() + " = " + c.toString();
         }
-        document.getElementById("qesAndans").style.display = "block";
+        document.getElementById("qesAndans").style.visibility = "visible";
         document.getElementById("start").innerHTML = "submit";
     }
 </script>
