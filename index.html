@@ -102,8 +102,10 @@
                     <div id="algebra">
                         <table class="table">
                                     <h2>Algebra</h2>
-                        
-                            <tr class="col-xs-6 classquesAndans"id="qesAndans" style="visibility: hidden">
+                            <tr class="col-xs-6">                                
+                                <img class="exemplarImg" src="img/algebra.PNG" alt = "An example of how to solve algebraic expression.">
+                            </tr>
+                            <tr class="col-xs-6 classquesAndans"id="qesAndans" style="display:None">
                                 <td>
                                         <div class="algebraquestions">
                                                 <p id="algebra1q">
@@ -194,10 +196,11 @@
                                     
                                 </td>
                             </tr>
+                            <!--Correct icons?-->
                             <tr>
                                 <td></td>
                                 <td>                                   
-                                    <button id="start" type="button" onclick="algebraQues();">Start</button>
+                                    <button id="start" class="button" onclick="algebraQues();">Start</button>
                                 </td>
                             </tr>   
                         </table>
@@ -404,7 +407,7 @@
             var idstr = "algebra" + parseInt(i + 1) + "q";
             document.getElementById(idstr).innerHTML = parseInt(i + 1) + ")  " + a.toString() + "+" + b.toString() + " = " + c.toString();
         }
-        document.getElementById("qesAndans").style.visibility = "visible";
+        document.getElementById("qesAndans").style.display = "table-row";
         document.getElementById("start").innerHTML = "submit";
     }
 </script>
